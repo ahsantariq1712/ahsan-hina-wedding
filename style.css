@@ -25,3 +25,7 @@
 .section {
     width: 100%;
 }
+.hall_image,
+.hall_video {
+    width: 100%;
+}
