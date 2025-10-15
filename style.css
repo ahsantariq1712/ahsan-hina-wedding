@@ -10,12 +10,12 @@
     gap: 30px;
 }
 .hall_image img {
-    width: 500px;
-    height: 300px;
+    width: 240px;
+    height: 200px;
 }
 .hall_video video {
-    width: 500px;
-    height: 300px;
+    width: 240px;
+    height: 200px;
 }
 .container {
     margin: 0 auto;
@@ -24,8 +24,22 @@
 }
 .section {
     width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
 }
 .hall_image,
 .hall_video {
+    width: 100%;
+}
+.video_section,
+.calerdar {
+    display: flex;
+    justify-content: center;
+}
+.calerdar {
+    margin-top: 20px;
+}
+.video_section video {
     width: 100%;
 }
