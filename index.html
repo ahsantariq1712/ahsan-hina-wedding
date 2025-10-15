@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hina & Ahsan Wedding Countdown</title>
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #ffcad4, #ffe3e3);
+      color: #333;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+      color: #d63384;
+    }
+
+    .countdown {
+      display: flex;
+      gap: 20px;
+      text-align: center;
+    }
+
+    .time-box {
+      background: white;
+      border-radius: 15px;
+      padding: 20px 30px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      min-width: 90px;
+    }
+
+    .time {
+      font-size: 2rem;
+      font-weight: bold;
+      color: #d63384;
+    }
+
+    .label {
+      font-size: 1rem;
+      color: #555;
+    }
+
+    footer {
+      margin-top: 30px;
+      font-size: 1rem;
+      color: #666;
+    }
+    .wedding_countDown {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    @media (max-width: 480px) {
+  h1 {
+    font-size: 1.7rem;
+  }
+  .countdown {
+    gap: 10px;
+  }
+  .time-box {
+    flex: 1 1 45%;
+    min-width: 120px;
+  }
+  .time {
+    font-size: 1.6rem;
+  }
+  .label {
+    font-size: 0.8rem;
+  }
+  footer {
+    font-size: 0.9rem;
+  }
+}
+  </style>
+</head>
+<body>
+    <section class="video_section">
+        <video autoplay muted loop playsinline class="bg-video">
+            <source src="video.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+        </video>
+        <div class="video-overlay">
+
+        </div>
+    </section>
+    <section class="wedding_countDown">
+        <h1>Hina & Ahsan Waleema Function Countdown</h1>
+
+        <div class="countdown" id="countdown">
+            <div class="time-box">
+            <div class="time" id="days">0</div>
+            <div class="label">Days</div>
+            </div>
+            <div class="time-box">
+            <div class="time" id="hours">0</div>
+            <div class="label">Hours</div>
+            </div>
+            <div class="time-box">
+            <div class="time" id="minutes">0</div>
+            <div class="label">Minutes</div>
+            </div>
+            <div class="time-box">
+            <div class="time" id="seconds">0</div>
+            <div class="label">Seconds</div>
+            </div>
+        </div>
+        <footer>Save the Date — 10 November 2025 ❤️</footer>
+   </section>
+
+ 
+
+  <script>
+    const countdownDate = new Date("Nov 10, 2025 00:00:00").getTime();
+
+    const timer = setInterval(function () {
+      const now = new Date().getTime();
+      const distance = countdownDate - now;
+
+      const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+      document.getElementById("days").innerText = days;
+      document.getElementById("hours").innerText = hours;
+      document.getElementById("minutes").innerText = minutes;
+      document.getElementById("seconds").innerText = seconds;
+
+      if (distance < 0) {
+        clearInterval(timer);
+        document.getElementById("countdown").innerHTML = "<h2>🎉 The Big Day Has Arrived! 🎉</h2>";
+      }
+    }, 1000);
+  </script>
+</body>
+</html>
