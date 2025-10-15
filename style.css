@@ -6,6 +6,7 @@
     align-items: center;
     margin-top: 30px;
     margin-bottom: 60px;
+    flex-direction: column;
 }
 .hall_image img {
     width: 500px;
