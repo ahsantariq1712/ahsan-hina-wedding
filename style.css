@@ -10,11 +10,11 @@
     gap: 30px;
 }
 .hall_image img {
-    width: 240px;
+    width: 100%;
     height: 200px;
 }
 .hall_video video {
-    width: 240px;
+    width: 100%;
     height: 200px;
 }
 .container {
