@@ -100,3 +100,11 @@ img, video {
   width: 100%;
   height: auto;
 }
+.flower_section {
+    margin: 50px 20px;
+}
+.flower_section img {
+    width: 100%;
+    height: 560px;
+    object-fit: cover;
+}
