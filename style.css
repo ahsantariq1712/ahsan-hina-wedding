@@ -16,6 +16,7 @@
 .hall_video video {
     width: 100%;
     height: 200px;
+    object-fit: cover;
 }
 .container {
     margin: 0 auto;
@@ -42,4 +43,60 @@
 }
 .video_section video {
     width: 100%;
+}
+
+/* */
+html, body {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.container, section, video, img, iframe {
+  max-width: 100%;
+}
+
+iframe {
+  display: block;
+}
+.picture-container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 30px;
+  margin-bottom: 60px;
+  flex-direction: column;
+  gap: 30px;
+}
+.picture-container {
+  flex-wrap: wrap;
+}
+img, video {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+}
+html, body {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.container, section, video, img, iframe {
+  max-width: 100%;
+}
+
+iframe {
+  display: block;
+}
+
+img, video {
+  width: 100%;
+  height: auto;
 }
