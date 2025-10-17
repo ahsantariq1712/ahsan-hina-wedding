@@ -243,3 +243,42 @@ p {
     from { transform: scale(0.8); opacity: 0; }
     to { transform: scale(1); opacity: 1; }
   }
+.calerdar {
+  margin-top: 20px;
+  position: relative;
+  width: 100%;
+  max-width: 400px; /* optional */
+}
+
+.calerdar img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Mehendi */
+.calerdar .mehendi {
+  position: absolute;
+  top: 45%;   /* instead of px */
+  left: 24%;  /* instead of px */
+  color: #bb0202;
+  font-size: 20px;
+}
+
+/* Nikah */
+.calerdar .nikah {
+  position: absolute;
+  top: 45%;
+  right: 40%;
+  color: #bb0202;
+  font-size: 20px;
+}
+
+/* Walima */
+.calerdar .walima {
+  position: absolute;
+  top: 50%;
+  left: 35%;
+  color: #bb0202;
+  font-size: 20px;
+}
