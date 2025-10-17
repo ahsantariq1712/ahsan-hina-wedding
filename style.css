@@ -259,8 +259,8 @@ p {
 /* Mehendi */
 .calerdar .mehendi {
   position: absolute;
-  top: 45%;   /* instead of px */
-  left: 24%;  /* instead of px */
+  top: 61%;   /* instead of px */
+  left: 20%;  /* instead of px */
   color: #bb0202;
   font-size: 20px;
 }
@@ -268,8 +268,8 @@ p {
 /* Nikah */
 .calerdar .nikah {
   position: absolute;
-  top: 45%;
-  right: 40%;
+  top: 62%;
+  right: 38%;
   color: #bb0202;
   font-size: 20px;
 }
@@ -277,8 +277,8 @@ p {
 /* Walima */
 .calerdar .walima {
   position: absolute;
-  top: 50%;
-  left: 35%;
+  top:69%;
+  left: 29%;
   color: #bb0202;
   font-size: 20px;
 }
