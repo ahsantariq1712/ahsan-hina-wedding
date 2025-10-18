@@ -266,19 +266,8 @@ p {
 .invite_txt {
     margin: 40px 20px;
 }
-.bg-image {
-    background-image: url(./myimage.jpg);
-    background-size: cover;
-    width: 100%;
-    height: 72vh;
-    margin-top: 25px;
-}
-.bg-image {
-    color: white;
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-}
+
+
 .flower_section {
     display: none;
 }
@@ -464,4 +453,101 @@ p {
     text-align: center;
     margin: 20px;
     line-height: 20px;
+}
+.hosts-section {
+  padding: 60px 20px;
+}
+
+.hosts-container {
+  display: grid;
+  grid-template-columns: repeat(2, 200px);
+  grid-gap: 20px;
+  position: relative;
+  justify-content: center;
+}
+
+/* Box Style */
+.host-box {
+  background: white;
+  color: #d63384;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 600;
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  animation: bounce 2.5s infinite ease-in-out;
+  width: 185px;
+}
+
+/* Bouncing Animation */
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+/* Add slight delay so they don't bounce together */
+.host-box:nth-child(1) { animation-delay: 0s; }
+.host-box:nth-child(2) { animation-delay: 0.2s; }
+.host-box:nth-child(3) { animation-delay: 0.4s; }
+.host-box:nth-child(4) { animation-delay: 0.6s; }
+.host-box:nth-child(5) { animation-delay: 0.8s; }
+
+/* Main Mezban Box */
+.main-host {
+  grid-column: span 2;
+  justify-self: center;
+  font-size: 20px;
+  font-weight: 700;
+  color: #bb0202;
+  margin-top: 20px;
+}
+
+/* Responsive for Mobile */
+@media (max-width: 500px) {
+  .hosts-container {
+    grid-template-columns: 1fr;
+  }
+  .main-host {
+    grid-column: auto;
+  }
+}
+.hosts-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  font-family: "Dancing Script", cursive;
+
+}
+.main-host {
+  width: 282px;
+  font-family: "Dancing Script", cursive;
+
+}
+    .mezban {
+      font-family: 'Noto Nastaliq Urdu', serif;
+      font-size: 48px;
+      color: #b22222;
+      text-shadow: 2px 2px 6px rgba(0,0,0,0.3);
+      text-align: center;
+    }
+
+    @keyframes bounce {
+      0%, 100% {
+        transform: translateY(0);
+      }
+      50% {
+        transform: translateY(-8px);
+      }
+    }
+.couple_photo img {
+    width: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
 }
